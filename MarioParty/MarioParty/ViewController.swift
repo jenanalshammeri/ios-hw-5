@@ -59,6 +59,7 @@ class ViewController: UIViewController {
         let randomPlayer = players.randomElement()!
         playerImageView.image = UIImage(named: randomPlayer.name)
         playMusic(musicName: randomPlayer.musicName())
+        selectedPlayer = randomPlayer
     }
     
     

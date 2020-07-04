@@ -56,20 +56,21 @@ class PlayerDetailsVC: UIViewController {
               }
     
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let ViewController = segue.destination as? PlayerDetailsVC else {
-            fatalError()
-        }
-        ViewController.selectedPlayer = selectedPlayer
-    }
-    /*
+    
+    
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+   /* override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-    }
-    */
+    
+      guard let ViewController = segue.destination as? PlayerDetailsVC else {
+                fatalError()
+            }
+            ViewController.selectedPlayer = selectedPlayer
+        }*/
+    
 
 }
